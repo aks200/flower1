@@ -1,0 +1,54 @@
+
+<html>
+        <head>
+            <style>
+
+            body{
+                    background-color:cornflowerblue;
+                  
+            }
+    
+            ol
+            {
+                counter-reset:section;
+                list-style-type: none;
+            }
+
+           ol li
+            {
+                font-family:'Lucida Sans Unicode';
+                font-size:16px;
+            }
+
+            li::before
+            {
+                counter-increment:section;
+                content:counters(section,".") " ";
+            }
+                
+            </style>
+        </head>
+    
+        <body>
+            <ol>
+                <li>Name:
+                    <ol>
+                        <li>FirstName</li>
+                        <li>LastName</li>
+                    </ol>
+                </li>
+            
+           
+                <li>Address:
+                        <ol>
+                            <li>Details</li>
+                            <li>city</li>
+                            <li>pincode</li>
+                        </ol>
+                </li>
+            </ol>
+
+
+          
+        </body>
+    </html>
